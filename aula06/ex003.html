@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20 arial;
+        }
+
+        h1 {
+            color: rgba(255, 212, 22);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) // Retorna em forma de String, se não houver conversão 
+        var n2 = Number(window.prompt('Digite outro número: ')) //Number.parseInt/parseFloat converte para Int ou Float
+        var n3 = Number(window.prompt('Digite outro número: ')) //Escolher Number(n), faz o JS escolher como converte-lo
+        var s = n1 + n2 + n3 // opções: Number.parseInt, Number.parseFloat, só parseInt, só parseFloat, só Number(n)
+        window.alert(`A soma do número ${n1} com ${n2} e ${n3} é ${s}`) // template String
+        // String(s) ou s.toString converte para String o valor de s.
+        // (number + number) para adição
+        // (string + string) para concatenação
+    </script>
+</body>
+</html>
