@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verificar nacionalidade</h1>
+    Nacionalidade: <input type="text" name="txtnac" id="txtnac"> 
+    <input type="button" value="verificar" onclick="registrarNacionalidade()">
+    <div id="res">
+
+    </div>
+    <script>
+        function registrarNacionalidade() {
+            var pais = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            var nacao = pais.value
+            if (nacao != 'Brasil') {
+                res.innerHTML += '<p>Você é estrangeiro!</p>'
+            } else {
+                res.innerHTML += '<p>Você é brasileiro!</p>'
+            }
+            res.innerHTML += '<p>Aproveite suas férias!</p>'
+        } 
+    </script>
+</body>
+</html>
