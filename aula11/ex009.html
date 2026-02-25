@@ -17,6 +17,7 @@
             var pais = window.document.querySelector('input#txtnac')
             var res = window.document.querySelector('div#res')
             var nacao = pais.value
+            res.innerHTML = `${nacao} é o seu país de origem!`
             if (nacao != 'Brasil') {
                 res.innerHTML += '<p>Você é estrangeiro!</p>'
             } else {
